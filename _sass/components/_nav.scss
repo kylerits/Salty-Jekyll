@@ -1,0 +1,126 @@
+/*  Navigation  */
+
+.nav {
+    text-align: right;
+    display: inline-block;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2em;
+    line-height: 1.2em;
+    font-weight: 800;
+    color: #333333;
+    position: relative;
+    padding: 0 8px;
+
+    transition: color .3s ease;
+}
+
+.nav-item .coolUnderline {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: #333333;
+    z-index: -5;
+
+    transition: all .35s ease;
+    -webkit-transition: all .35s ease;
+}
+
+.nav-item:hover .nav-link {
+    color: white;
+}
+
+.nav-item:hover .coolUnderline {
+	width: 100%;
+}
+
+/* Sub Navigation */
+
+.sub-nav {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    text-align: right;
+    background-color: #333333;
+    padding: .5em 1em;
+    width: 0px;
+    z-index: 10;
+    overflow: hidden;
+
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity .4s ease .2s, width .4s ease .2s;
+    -webkit-transition: opacity .4s ease .2s, width .4s ease .2s;
+}
+
+.nav-item:hover .sub-nav {
+    visibility: visible;
+    opacity: 1;
+    width: 250px;
+}
+
+.sub-nav-item {
+    list-style-type: none;
+    opacity: 0;
+}
+
+.nav-item:hover .sub-nav-item {
+    opacity: 1;
+    transition: opacity .4s ease .45s;
+    -webkit-transition: opacity .4s ease .45s;
+}
+
+.sub-nav-link {
+    color: white;
+    white-space: nowrap;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.4em;
+}
+.sub-nav-link:hover {
+    color: whitesmoke;
+}
+
+/* Social Navigation */
+
+.social-wrap > a {
+    color: #333333;
+}
+
+.social-media-list {
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-item {
+    list-style-type: none;
+    margin-left: 5px;
+}
+
+.social-item > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    line-height: 0;
+    font-size: 1.4em;
+    color: #333333;
+    border: solid 3px #333333;
+}
+
+.social-item > a:hover {
+	text-decoration: none;
+    color: whitesmoke;
+    background-color: #333333;
+}

@@ -1,0 +1,20 @@
+/* ################### */
+/* #####   Footer   #####*/
+/* ################### */
+
+footer {
+    position: relative;
+    z-index: 1;
+    background-color: #333333;
+    padding: 60px 0 60px 0;
+
+    color: $color-white;
+
+    hr {
+      border-top: 1px solid $color-lightgrey;
+    }
+
+    p {
+      color: $color-white;
+    }
+}

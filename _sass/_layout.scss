@@ -1,0 +1,37 @@
+/* ################### */
+/* #####   Main   #####*/
+/* ################### */
+
+
+#main {
+    position: relative;
+    z-index: 20;
+}
+
+#main.home {
+    padding-top: 100vh;
+}
+
+#main.default {
+  padding-top: 40vh;
+}
+
+/* Faded Background Section */
+
+.faded-bg {
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.faded-bg > div {
+    background-image: linear-gradient(whitesmoke, rgba(255,255,255,.9) 40%, rgba(0,0,0,0));
+    padding-top: 60px;
+    padding-bottom: 200px;
+}
+
+/* Solid Background Section */
+
+.solid-bg {
+    background-color: whitesmoke;
+    padding: 60px 0 60px 0;
+}

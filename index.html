@@ -1,0 +1,190 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: salt
+title: Home
+navigation_weight: 1
+
+---
+
+<!--    About / Overview Section    -->
+
+<div class='faded-bg' style="background-image:url({{site.baseurl}}/assets/img/crane-scoop.jpg);">
+    <div class='inner-wrap'>
+
+        <div class='container'>
+          <div class='row'>
+
+            <div class='col-sm-8'>
+                <h2 class='display-2'>What We Do</h2>
+                <p>
+                  Mid-American Salt is headquartered in Fort Wayne, Indiana with operations located throughout the Great Lakes, Midwest River System and along the East Coast. Our #1 priority is the Commercial Snow & Ice Professional, but we also supply many homeowners, municipalities and state DOTs. Our Fort Wayne location also provides products and service to Commercial Snow & Ice Professionals in the region and our global resources enable us to import high quality products from around the world. Mid-American Salt can deliver these products to any location in North America. These products include bulk road salt, bagged ice melt, Magnesium, Calcium, water softener salt, industrial salt, food grade salt, animal feed salt, equipment and supplies.
+                </p>
+
+                <p>
+                  Mid-American Salt has become the fastest-growing salt distributor in North America by providing our customers with the highest quality products and exceptional service. Our reliable supply chain includes sources throughout North America, Africa, Europe, and South America. We provide salt products to our customers by bag, pallet, truckload, rail car, barge, and vessel and our logistics expertise ensures our customers don’t run out of product.
+                </p>
+
+                <p>
+                  Mid-American Salt conducts business based on open communication, honesty and integrity and we appreciate our customers and the trust they place with us. We are constantly finding supply solutions for our customers and partnering with them to help them gain a competitive advantage. We strive to do precisely what we’ve promised and we hold our supply partners to these same standards.
+                </p>
+            </div>
+
+          </div>
+
+          <div class='row'>
+
+            <div class='col-sm-8 offset-sm-4'>
+                <h2 class='display-2'>Why Us</h2>
+                <p>
+                  Mid-American Salt has established the most reliable supply of high quality imported salt in North America and we can offer the Commercial Snow & Ice Professionals a stable supply of SSM salt in all markets. Our SSM salt mine in Morocco is one of the highest quality deep shaft mines in the world. SSM produces high quality salt and is known for high purity and low moisture. Their SSM quality system is ISO 9001 certified assuring they produce consistent high quality salt vessel after vessel.
+                </p>
+                <p>
+                  Our customers are important and we appreciate the opportunity to provide them with our products and service in all markets and in all conditions. Our commercial customers have learned they no longer have to worry about running out of salt or receiving inconsistent quality. The commercial market is our top priority.
+                </p>
+            </div>
+
+          </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--    Products Intro Section    -->
+
+<div class='solid-bg'>
+
+    <div class='container'>
+
+        <div class='row'>
+            <div class='col-sm-8'>
+                <h2 class='display-3'>Buy Directly from Us</h2>
+                <p>We offer a wide variety of products ranging from bulk salt to snow removal equipment. Click on a link below to see our product line.</p>
+            </div>
+        </div>
+
+        <div class='row'>
+
+          <div class='col-sm-4'>
+
+            {% include card.html card_title="Bulk Salt" background="bulk-salt.jpg" badge="badge-bulk-salt.png" card_desc="Lorem ipsum..." card_link="#" %}
+
+          </div>
+
+          <div class='col-sm-4'>
+
+            {% include card.html card_title="Bagged Salt" background="bagged-salt.jpg" badge="badge-bagged-salt.png" card_desc="Lorem ipsum..." card_link="#" %}
+
+          </div>
+
+          <div class='col-sm-4'>
+
+            {% include card.html card_title="Equipment" background="equipment.png" badge="badge-equipment.png" card_desc="Lorem ipsum..." card_link="#" %}
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-8 offset-md-2">
+            <h3><strong><em>FEATURING</em></strong></h3>
+            <img src="{{ site.baseurl }}/assets/img/HotRock-Logo.png" class="img-fluid" alt="HotRock" />
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <p>
+              HotRock™ products are made with SSM rock salt, one of the purist and most sought after deposits of sodium chloride in the world. This unique mineral content naturally reflects a pink hue that enables precision application control while spreading. Even more impressively, it naturally contains other minerals and is produced at a variety of sizes to provide a long-lasting natural melting boost.
+            </p>
+
+            <p>
+              These attributes were the inspiration behind the HotRock™ brand. This mineral, along with other quality ingredients, allows us to develop high-performing products to meet all of your snow & ice removal needs, no matter the scale.
+            </p>
+
+            <p>
+              <strong><em>When you melt, melt confidently with HotRock™.</em></strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            {% include
+              product-card.html
+              imgUrl="Heat-Boost.png"
+              title="Rock Salt + Heat Boost"
+              bullets="
+                <li>
+                  Screened to Size & Naturally Bright in Color for Optimum Spreadability
+                </li>
+                <li>
+                  Screened to Size & Naturally Bright in Color for Optimum Spreadability
+                </li>"
+            %}
+          </div>
+
+          <div class="col-lg-6">
+            {% include
+              product-card.html
+              imgUrl="HR-StormGuard-Plus.png"
+              title="StormGuard Plus"
+              bullets="
+                <li>
+                  Screened to Size & Dyed Bright in Color for Optimum Spreadability
+                </li>
+                <li>
+                  Contains Sodium Chloride and Calcium Chloride for Added Performance
+                </li>
+                <li>
+                  Effective to -6° Fahrenheit
+                </li>"
+            %}
+          </div>
+
+          <div class="col-lg-6">
+            {% include
+              product-card.html
+              imgUrl="HR-StormGuard-Pro.png"
+              title="StormGuard Pro"
+              bullets="
+                <li>
+                  Screened to Size & Dyed Bright in Color for Optimum Spreadability
+                </li>
+                <li>
+                  Contains Sodium Chloride, Calcium Chloride, Magnesium Chloride and Potassium Chloride for Maximum Performance
+                </li>
+                <li>
+                  Effective to -20° Fahrenheit
+                </li>"
+            %}
+          </div>
+
+          <div class="col-lg-6">
+            {% include
+              product-card.html
+              imgUrl="HR-StormGuard-Max.png"
+              title="StormGuard Max"
+              bullets="
+                <li>
+                  Screened to Size & Dyed Bright in Color for Optimum Spreadability
+                </li>
+                <li>
+                  Contains Sodium Chloride, Calcium Chloride, Magnesium Chloride for Superior Performance
+                </li>
+                <li>
+                  Effective to -15° Fahrenheit
+                </li>"
+            %}
+          </div>
+
+        </div>
+
+    </div>
+
+</div>

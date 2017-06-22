@@ -1,0 +1,51 @@
+// Color Pallette
+
+$color-white: whitesmoke;
+$color-lightgrey: #bdc3c7;
+$color-blue:  #7b9bc0;
+$color-black: #292b2c;
+
+// Spacing
+$row-padding: 50px;
+
+.row {
+  padding-top: $row-padding;
+  padding-bottom: $row-padding;
+}
+
+.row + .row {
+  padding-top: 0px;
+}
+
+.card, .salt-bag {
+  .row {
+    padding: inherit;
+  }
+}
+
+// General inline link color
+
+.container a {
+  color: $color-blue;
+}
+
+
+// Fancy Bullet Point List
+
+.salt-list {
+  padding-right: 1.5rem;
+
+  li {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    i {
+      color: $color-blue;
+    }
+
+  }
+
+}

@@ -1,0 +1,18 @@
+// Include Bower Components
+@import "../bower_components/bootstrap/scss/bootstrap.scss";
+@import "../bower_components/font-awesome/scss/font-awesome.scss";
+
+// Base Files
+@import 'base';
+@import 'layout';
+
+// Components
+@import "components/header";
+@import "components/nav";
+@import "components/intro";
+@import "components/title";
+@import "components/ui";
+@import "components/footer";
+
+// Responsive
+@import 'responsive';

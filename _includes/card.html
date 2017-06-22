@@ -1,0 +1,14 @@
+<div class='card product-card'>
+  <div class='card-head' style='background-image: url({{site.baseurl}}/assets/img/{{ include.background }});'>
+    <img src="{{site.baseurl}}/assets/img/{{ include.badge }}" alt="{{ include.card_title }}" />
+  </div>
+  <div class='card-block'>
+    <h3 class='card-title'>{{ include.card_title }}</h3>
+    <p class='card-text'>
+      <small>{{ include.card_desc }}</small>
+    </p>
+  </div>
+  <div class='card-footer text-right'>
+    <a href='{{ include.card_link }}' class='cat-link'>View Products</a>
+  </div>
+</div>

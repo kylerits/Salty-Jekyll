@@ -1,0 +1,76 @@
+/* ################################ */
+/* Correct CSS Based on Screen Size */
+/* ################################ */
+
+
+/* ################################ */
+/* BootStrap4 Breakpoints */
+/* ################################ */
+
+/*  Extra Small:    <   544px  */
+/*  Small:          >=  544px  */
+/*  Medium:         >=  768px  */
+/*  Large:          >=  992px  */
+/*  Extra Large:    >=  1200px  */
+
+
+/* ################## */
+/* Extra Small Screen */
+/* ################## */
+
+@media (max-width: 544px) {
+
+    header .logo-wrap {
+	    top: 30px;
+      left: 30px;
+    }
+
+    .logo-wrap img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .show-button {
+        top: auto;
+        bottom: 30px;
+        right: 30px;
+
+        background-color: #333333;
+    }
+
+    /*  Sidebar  */
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sub-nav-link {
+        font-size: 1em;
+    }
+
+    /*  Intro Section  */
+
+    #intro .tagline {
+        padding: 1.5em;
+    }
+
+    #intro .tagline h1 {
+        font-size: 3em;
+    }
+}
+
+
+/* ################## */
+/* Extra Large Screen */
+/* ################## */
+
+@media (min-width: 1200px) {
+
+    header .logo-wrap {
+        left: 120px;
+    }
+
+    .show-button {
+        right: 120px;
+    }
+}

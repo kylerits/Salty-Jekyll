@@ -1,0 +1,132 @@
+/* ################### */
+/* #####  Header  #####*/
+/* ################### */
+
+header {
+    position: fixed;
+    z-index: 1000;
+
+    /* Logo Section */
+
+    .logo-wrap {
+        position: absolute;
+        z-index: 300;
+        top: 60px;
+        left: 60px;
+
+        img {
+            shape-outside: circle();
+        }
+    }
+
+}
+
+/* Display Sidebar Button */
+
+.show-button {
+    position: fixed;
+    top: 105px;
+    right: 60px;
+    z-index: 300;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    shape-outside: circle();
+    overflow: hidden;
+    background-color: rgba(51,51,51,.6);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+
+    &:hover {
+        background-color: rgba(51,51,51,1);
+    }
+
+    .line {
+        background-color: whitesmoke;
+        height: 2px;
+        width: 50%;
+        margin: 3px 0px;
+    }
+}
+
+/* Navigation Sidebar */
+
+.sidebar {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    z-index: 400;
+
+    background-color: whitesmoke;
+
+    padding: 30px;
+
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+
+    transition: transform .2s ease;
+    -webkit-transition: transform .2s ease;
+}
+
+.sidebar.show {
+/*    display: flex;*/
+    box-shadow: 20px 0 100px #333333;
+
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+
+    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+}
+
+.close-button {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.close-button .line {
+    position: absolute;
+    top: 50%;
+    background-color: #333333;
+    height: 2px;
+    width: 100%;
+}
+
+.close-button .line.line1 {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.close-button .line.line2 {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.logo-wrap {
+    width: 140px;
+    align-self: flex-end;
+
+    img {
+        width: 100%;
+    }
+}
